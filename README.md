@@ -22,7 +22,7 @@ docker container run -d \
 	-v $HOME/leanote:/leanote \ # leanote 
 	--link leanote_mongo:db \ # link mongodb
 	-e TZ=Asia/Shanghai \
-	217heidai/leanote:2.6.1
+	217heidai/leanote
 ```
 
 # How to Configure
