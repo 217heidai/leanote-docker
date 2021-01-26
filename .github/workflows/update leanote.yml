@@ -39,10 +39,6 @@ jobs:
           wget https://nchc.dl.sourceforge.net/project/leanote-bin/$VERSION/leanote-linux-amd64-v$VERSION.bin.tar.gz
           mv leanote-linux-amd64-v$VERSION.bin.tar.gz leanote-linux-amd64.bin.tar.gz
 
-      - name: Update dockerfile
-        run: |
-
-
       - name: Commit Changes
         id: commit
         run: |
