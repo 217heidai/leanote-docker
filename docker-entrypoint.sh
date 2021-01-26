@@ -1,11 +1,11 @@
 #!/bin/bash
 
 
-if [ -e "/leanote-linux-amd64-v2.6.1.bin.tar.gz" ]; then
+if [ -e "/leanote-linux-amd64.bin.tar.gz" ]; then
     cd /
-    tar -zxf leanote-linux-amd64-v2.6.1.bin.tar.gz
+    tar -zxf leanote-linux-amd64.bin.tar.gz
     chmod a+x leanote/bin/run.sh
-    rm -f leanote-linux-amd64-v2.6.1.bin.tar.gz
+    rm -f leanote-linux-amd64.bin.tar.gz
     rm -rf leanote/mongodb_backup
 fi
 

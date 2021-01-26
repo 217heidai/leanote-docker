@@ -1,9 +1,9 @@
-FROM centos:7.5.1804
-MAINTAINER 217heidai
+FROM centos:7.9.2009
+LABEL maintainer="217heidai"
 LABEL name="leanote" 
 ENV TZ=Asia/Shanghai
 
-COPY leanote-linux-amd64-v2.6.1.bin.tar.gz /
+COPY leanote-linux-amd64.bin.tar.gz /
 COPY docker-entrypoint.sh /bin/
 RUN set -ex; \
 	chmod a+x /bin/docker-entrypoint.sh; \
