@@ -36,8 +36,8 @@ jobs:
           rm -rf mm-wiki*
           VERSION=$(curl -s "https://api.github.com/repos/${{env.OWNER}}/${{env.REPOSITORY}}/releases/latest" | awk -F '"' '/tag_name/{print $4}')
           echo "VERSION=$VERSION"  >> $GITHUB_ENV
-          wget https://github.com/${{env.OWNER}}/${{env.REPOSITORY}}/releases/download/$VERSION/leanote-linux-amd64-$VERSION.bin.tar.gz
-          mv leanote-linux-amd64-$VERSION.bin.tar.gz leanote-linux-amd64.bin.tar.gz
+          wget https://github.com/${{env.OWNER}}/${{env.REPOSITORY}}/releases/download/$VERSION/leanote-linux-amd64-v$VERSION.bin.tar.gz
+          mv leanote-linux-amd64-v$VERSION.bin.tar.gz leanote-linux-amd64.bin.tar.gz
 
       - name: Update dockerfile
         run: |
